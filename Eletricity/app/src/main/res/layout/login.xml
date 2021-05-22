@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/login"
+    android:orientation="vertical"
+    >
+
+   <include layout="@layout/top"/>
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:background="#e7ffffff"
+        android:layout_marginTop="80dp"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/number_ll"
+        android:background="@drawable/btn_backg2"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+
+
+        >
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="  账号:"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_number"
+            android:background="@null"
+            android:maxLines="1"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/password_ll"
+        android:background="@drawable/btn_backg2"
+        android:orientation="horizontal"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_below="@+id/number_ll"
+        android:layout_alignLeft="@+id/number_ll"
+        android:layout_alignStart="@+id/number_ll">
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  密码:"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_password"
+            android:inputType="textPassword"
+            android:background="@null"
+            android:maxLines="1"/>
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/permission_layout"
+            android:layout_below="@+id/password_ll"
+            android:layout_marginTop="20dp"
+            >
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="管理员"
+                    android:textSize="20sp"
+                    android:id="@+id/master_btn"
+                    android:textColor="#2c2c2c"
+                    />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="学生用户"
+                    android:textSize="20sp"
+                    android:id="@+id/user_btn"
+                    android:textColor="#2c2c2c"
+                    />
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_in"
+        android:layout_marginTop="20dp"
+
+        android:layout_below="@+id/permission_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_backg"
+            android:text="登录"
+            android:textSize="25sp"
+            android:textColor="#ffffff" />
+        <Button
+            android:id="@+id/btn_reg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_backg"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/btn_login"
+            android:text="注册"
+            android:textSize="25sp"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

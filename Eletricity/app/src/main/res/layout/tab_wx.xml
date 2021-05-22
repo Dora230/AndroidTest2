@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/person"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/midst_ll"
+        android:layout_marginTop="20dp"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_backg2"
+            android:id="@+id/used"
+            android:layout_weight="1"
+            android:text="本月用电量:"
+            android:textSize="25sp"
+            android:textColor="#3a6ccf"
+            />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:text="120"
+           android:gravity="center_vertical"
+           android:textSize="25sp"
+           android:textColor="#3d986c"
+           />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="472dp"
+        android:id="@+id/mostpart_ll"
+        android:layout_marginTop="15dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:id="@+id/small_ll"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="常用电器："
+                android:textSize="30sp"
+                android:gravity="center_vertical"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/small_ll2"
+            android:orientation="horizontal"
+            android:layout_below="@id/small_ll"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/btn_backg2"
+                android:layout_weight="1"
+                android:text="台灯"
+                android:textSize="20sp"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/btn_backg2"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:text="去球器"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/btn_backg2"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:text="电脑"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/small_ll3"
+
+            android:orientation="horizontal"
+            android:layout_below="@id/small_ll2"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/btn_backg2"
+                android:layout_weight="1"
+                android:text="电扇"
+                android:textSize="20sp"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/btn_backg2"
+                android:layout_weight="1"
+                android:text="手机"
+                android:textSize="20sp"
+                />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
